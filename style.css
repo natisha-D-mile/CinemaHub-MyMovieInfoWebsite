@@ -1,0 +1,99 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
+    @keyframes cinema-animation {
+            0% { color: white; }
+            50% { color: green; }
+            100% { color: white; }
+       }
+   .animated-word {
+            animation: cinema-animation 2s infinite; 
+       }
+
+/* Making the toggle menu button appear white on small screen sizes */
+    @media (max-width: 991.98px) {
+        .navbar-toggler-icon {
+            filter: invert(1);
+        }
+    }
+
+
+  
+
+
+    .backg-img{
+            background: url("bg-image.webp");
+            background-position: center;
+            height: 80vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        /* === removing default button style ===*/
+    .button {
+        margin: 0;
+        height: auto;
+        background: transparent;
+        padding: 0;
+        border: none;
+    }
+
+    /* button styling */
+    .button {
+        --border-right: 6px;
+        --text-stroke-color: white;
+        --animation-color: #37FF8B;
+        --fs-size: 2em;
+        letter-spacing: 3px;
+        text-decoration: none;
+        font-size: var(--fs-size);
+        font-family: "Arial";
+        position: relative;
+        text-transform: uppercase;
+        color: transparent;
+        -webkit-text-stroke: 1px var(--text-stroke-color);
+        display: inline-block;
+        white-space: nowrap;
+    }
+    /* this is the text, when you hover on button */
+    .hover-text {
+        position: absolute;
+        box-sizing: border-box;
+        content: attr(data-text);
+        color: var(--animation-color);
+        width: 0%;
+        inset: 0;
+        border-right: var(--border-right) solid var(--animation-color);
+        overflow: hidden;
+        transition: 0.5s;
+        -webkit-text-stroke: 1px var(--animation-color);
+    }
+    /* hover */
+    .button:hover .hover-text {
+        width: 100%;
+        filter: drop-shadow(0 0 23px var(--animation-color))
+    }
+    
+    #btn-fetch{
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 45%;
+
+     }
+
+     .card-ride{
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+       
+     }
+        
+     .hover-card:hover {
+        transform: scale(1.05);
+     }
+     .bold-text {
+        font-weight: bold;
+    }
+  
+   
