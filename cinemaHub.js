@@ -1,6 +1,6 @@
 const backImg = document.querySelector('.backg-img');
 let row = document.getElementById('movie-row');
-let base_url= "https://image.tmdb.org/t/p/w185/";
+let base_url= "https://image.tmdb.org/t/p/w500/";
 
 
 
